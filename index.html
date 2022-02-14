@@ -7,9 +7,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
-  
+
+/*h2 asetukset*/
+h2, h4 {
+  text-align: center;
+}
 .responsive {
-  width: 95%;
+  width: 100%;
   height: auto;
 }
 .content {
@@ -87,6 +91,19 @@ input[type=submit]:hover {
 }
 .alasivu1 {
   background-image:linear-gradient(#f2f2f2, #a6a6a6);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.alasivu2 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.alasivu3 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 .alasivu4 {
   background-image:url('https://user-images.githubusercontent.com/82649942/153618283-382ab501-457e-47df-ac81-2697e18c9461.jpeg');
@@ -117,25 +134,10 @@ footer {
   padding: 3px;
   color: black;
 }
-/*h2 asetukset*/
-h2 {
-  text-align: center;
-}
 </style>
 </head>
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*navbar*/
     <body>
         <body style="height:1500px">
 
@@ -169,23 +171,10 @@ h2 {
   </div>
 </nav>   
         </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
 
 <div class="content">
-  <img src="https://user-images.githubusercontent.com/82649942/152682275-bc72ffdc-7837-4f2b-9036-80616636d958.jpeg" class="responsive" width="600" height="400">
+  <img src="https://user-images.githubusercontent.com/82649942/152682275-bc72ffdc-7837-4f2b-9036-80616636d958.jpeg" class="responsive">
 
 <div class="container-fluid text-center">
       <br><br><h1>Tervetuloa Ninja kissan omille sivuille. Tällä sivustolla voit seurata Ninjan kuulumisia ja ottaa 
@@ -193,10 +182,8 @@ yhteyttä, jos haluat jotain tietää ninjasta.</h1><br><br>
 </div>
 </div>
 
-
-<div class="alasivu1">
+<div id="kuka" class="alasivu1">
 <div class="content"">
-<div id="kuka" class="container-fluid">
 <h2>Kuka Ninja on</h2><br><br><br>
   <div class="row">
     <div class="col-sm-6 col-sm-push-6">
@@ -227,7 +214,8 @@ yhteyttä, jos haluat jotain tietää ninjasta.</h1><br><br>
               Suspendisse ut mollis elit, at fringilla risus. In commodo, metus sed tincidunt euismod, sapien velit
               malesuada nisi, non eleifend augue eros eu eros. Duis nec lorem bibendum, porttitor risus ac, 
                  rhoncus erat. Donec varius faucibus tempor. Aenean tincidunt orci ante. Class aptent taciti sociosqu 
-           ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ut fringilla sem.</p>
+           ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ut fringilla sem. Vivamus consectetur nulla ultrices arcu fermentum, a pretium ex sagittis. 
+         In dapibus sem et augue lobortis pellentesque.</p>
     </div>
   </div>
   <div>
@@ -256,18 +244,72 @@ tempor bibendum at vel mauris. Nam fringilla ullamcorper urna ac imperdiet.</p>
   
  </div> 
 </div>
+</div>
 
+
+<div id="mukana" class="alasivu2">
 <div class="content">
- <div id="syksy" class="container-fluid">
-  <h2>Syksy on tullut</h2>
-  <h3>18.10.2021</h3>
-  
+<h2>Luennolla mukana</h2>
+<h4>17.11.2021</h4><br><br>
+<br>
 <div class="row">
- <div class="col-sm-6">
-   <img src="https://user-images.githubusercontent.com/82649942/153463226-9eb5b47d-20ef-4aad-a6c6-aedc3a118562.jpeg" class="responsive" width="20" height="40">
- </div>
+    <div class="col-sm-12">
+      <br>
+<img src="https://user-images.githubusercontent.com/82649942/153460897-28746755-031e-4703-a8ac-01e7a4979b71.jpeg" class="responsive">
+
+
+<p><br>Tänään oli taas yksi niistä päivistä, kun ninja oli mukana luennolla. Nykyään kun opiskelu 
+hoidetaan etänä, niin kissakin pääsee luennolle mukaan. Ninjan paikalla olosta kylläkin on 
+enemmän haittaa kuin hyötyä. Keskittyminen suuntautuu kissan silittämiseen, enemmän kuin 
+luennon seuraamiseen.</p>
+<p>Nulla tempus odio nisi, sit amet viverra felis mollis interdum. Vestibulum euismod quam ut 
+imperdiet vehicula. Aenean a euismod leo. In hac habitasse platea dictumst. Suspendisse suscipit 
+gravida justo, vitae accumsan turpis finibus sit amet. Curabitur rhoncus tincidunt velit, quis 
+hendrerit ante dapibus accumsan. Aliquam feugiat vulputate turpis sit amet porta. Pellentesque dui 
+lectus, imperdiet eget ultricies eget, volutpat ac dolor. Quisque sit amet facilisis magna.</p>
+<p>Sed porttitor malesuada quam, a accumsan tellus posuere eu. Duis lectus dolor, convallis non velit 
+at, laoreet auctor nunc. Quisque finibus dapibus eros, at rhoncus nisl ornare in. Aliquam blandit 
+nulla in lectus imperdiet vestibulum. Etiam aliquet quam eget ex tincidunt rhoncus. Sed suscipit id 
+libero nec cursus. Sed sed velit vel sem fringilla placerat vel sed ante. Proin egestas porttitor diam. 
+Morbi tempor sodales convallis.</p>
+<p>Pellentesque nulla mauris, suscipit et justo sit amet, pretium dignissim elit. Nulla quis massa auctor, 
+convallis tortor quis, dictum tellus. Pellentesque et tristique mauris, eget dictum dolor. Nullam et 
+egestas urna, non gravida nunc. Etiam ornare tempus dui eu elementum. Aliquam odio libero, 
+fringilla tincidunt ullamcorper id, lacinia quis libero. Cras a lectus quis purus suscipit malesuada. 
+Nam ut ante tempor, sollicitudin metus ac, cursus enim. Nulla efficitur sodales vehicula. Vestibulum 
+mattis velit id vestibulum gravida. Nullam imperdiet aliquet urna, consequat luctus ante sagittis id. 
+Nulla mollis varius purus, eu posuere massa aliquam ac. Fusce posuere odio sagittis tristique 
+efficitur. Morbi dignissim risus sed quam ultrices scelerisque.</p>
+<p>Nunc quis auctor felis. In tempor scelerisque enim ac lacinia. Aliquam iaculis, justo et tincidunt 
+faucibus, lectus arcu mollis sapien, non feugiat lorem ligula eget enim. Integer sed ante vehicula, 
+tincidunt ligula quis, suscipit ligula. Fusce vel velit vitae nibh condimentum aliquam non eu sem. 
+Quisque mollis et nulla sed vestibulum. Cras tempor eleifend lacus, sit amet luctus nisi vehicula quis. 
+Pellentesque nibh ipsum, tristique in iaculis at, vestibulum vel magna.</p>
+<p>Quisque eget porta libero, vel posuere risus. In hac habitasse platea dictumst. Vivamus aliquam sit 
+amet orci sed efficitur. Morbi non enim nulla. Vestibulum eget ultricies dolor. Sed massa dui, 
+molestie a nunc non, tristique vehicula dolor. Sed congue fringilla turpis, non dapibus nulla congue 
+sit amet. Vestibulum imperdiet, sem id hendrerit commodo, odio leo feugiat justo, sit amet 
+fermentum ligula magna at felis. Proin malesuada leo eu lobortis blandit. Nulla hendrerit euismod 
+luctus. Etiam interdum, purus ut consectetur efficitur, odio eros egestas ex, vitae varius ligula lectus 
+eget metus. Nunc tortor ex, cursus sodales facilisis sit amet, aliquet eget lacus.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="syksy" class="alasivu3">
+<div class="content">
+<h2>Syksy on tullut</h2>
+<h4>18.10.2021</h4><br><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <br>
+<img src="https://user-images.githubusercontent.com/82649942/153463226-9eb5b47d-20ef-4aad-a6c6-aedc3a118562.jpeg" class="responsive">
+<br><br></div>
 
 <div class="col-sm-6">
+<br>
 <p>Syksyn saapuminen tarkoittaakin ihan uusien värien ihmettelyä. Ninja sisäkissana on todella 
 kiinnostunut ulkomaailmasta ja pienikin muutos on jännittävää.</p>
 
@@ -276,31 +318,31 @@ maximus, elit ex rutrum nulla, sit amet bibendum risus metus at justo. Suspendis
 molestie. Praesent ullamcorper fringilla lacus, a pretium purus laoreet vel. Nulla nec massa est. 
 Aenean fringilla sagittis purus, in tristique ex interdum ac. Maecenas pulvinar ex erat, et congue 
 magna viverra pretium. Donec vel scelerisque libero. Duis suscipit et orci at gravida. Aliquam erat 
-volutpat.</p>
+volutpat.Suspendisse at odio sagittis, pulvinar nisi sit amet, laoreet leo. Ut suscipit magna in 
+nisi scelerisque pellentesque nec in magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 <p>Mauris tortor quam, iaculis in elit eget, malesuada dignissim mi. Nullam nunc est, blandit scelerisque 
 congue in, vulputate ac nisi. Curabitur nec tempor felis, non suscipit diam. Fusce nisi lorem, convallis 
 laoreet pellentesque eu, viverra nec velit. Fusce eget imperdiet diam. Cras nec nisl sapien. Donec et 
 nunc odio. Maecenas faucibus bibendum eros in aliquam. Vestibulum vel fermentum lacus.</p>
+
+<p>Pellentesque commodo quam pulvinar posuere semper. Morbi elementum eleifend tincidunt. Donec tempus tincidunt ante, 
+at auctor arcu tincidunt id. Mauris ante risus, bibendum sit amet ligula ut, auctor dictum dolor. Sed tortor massa, 
+facilisis ut lorem egestas, vestibulum molestie orci. Fusce consequat sit amet magna eget auctor. Praesent eu sapien
+vel est mattis accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In 
+laoreet nunc nec felis vestibulum, et condimentum libero finibus. Aliquam placerat mi eget orci rhoncus convallis. 
+Vivamus eget accumsan quam, et eleifend nisi. Maecenas ut urna eget felis molestie maximus.</p>
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
+</div>
 
 
 <div id="yhteys" class="alasivu4">
-
-
 <div class="content">
   <div class="container-fluid text-center">
    <h2>Yhteystiedot</h2>
-    <p>Voit ottaa yhteyttä täyttämällä alla olevan yhteydenotto lomakkeen tai laittamalla suoraan 
+    <p><br><br>Voit ottaa yhteyttä täyttämällä alla olevan yhteydenotto lomakkeen tai laittamalla suoraan 
 sähköpostia osoitteeseen ninja_kissa@gmail.com</p> 
 </div>
 
@@ -368,8 +410,9 @@ sähköpostia osoitteeseen ninja_kissa@gmail.com</p>
   <a href="https://www.instagram.com/ninjansivut/"target="_blank"><img src="https://user-images.githubusercontent.com/82649942/152680441-4895f6f9-4a5d-4d9f-b990-4b63f70ee263.png" style="width:80px;height:80px;">Instagram</a>
 </footer>
 
-
 </div>
-    </body>
+
+
+</body>
 
 </html>
