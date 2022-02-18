@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 body {
-  background-image: url('https://user-images.githubusercontent.com/82649942/154117496-0b932275-018e-48d6-a3b0-832ee18aa70d.jpeg');
+  background-image: url('https://user-images.githubusercontent.com/82649942/154688521-89796d1d-59f0-49cb-818c-6782e60da3ac.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
+  padding: 50px;
+  margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+.box {
+  background-color: floralwhite;
+  width: 400px;
+  border: 15px solid lavenderblush;
+  padding: 50px;
+  margin: auto;
+  float: center;
+}
+.responsive {
+  width: 100%;
+  height: auto;
 }
 </style>
 </head>
 <body>
-<div class container-fluid text-center>
-<h1>Kiitos yhteydenotosta!</h1>
-<p><a href="https://iidakok.github.io/">Palaa takaisin</a></p>
+<div class container-fluid>
+  <div class="row">
+    <div class="col-sm-6 col-sm-push-6">
+      <img src="https://user-images.githubusercontent.com/82649942/154692094-767b058c-a844-414c-bd7d-ab1bdc15f2dc.png" class="responsive">
+    </div>
+    <div class="col-sm-6 col-sm-pull-6">
+       <div class="box">
+         <h1>Kiitos yhteydenotosta!</h1>
+         <p><a href="https://iidakok.github.io/">Palaa takaisin</a></p>
+       </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
