@@ -10,11 +10,13 @@
 body {
   font-family: Georgia, serif;
 }
+* {
+  box-sizing: border-box;
+}
 h1 {
   font-size: 40px;
   text-align: center;
 }
-/*h2 asetukset*/
 h2 {
   text-align: center;
 }
@@ -50,10 +52,6 @@ p {
   padding-left: 10px;
   padding-right: 10px;
 }
-* {
-  box-sizing: border-box;
-}
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -61,12 +59,10 @@ input[type=text], select, textarea {
   border-radius: 4px;
   resize: vertical;
 }
-
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
-
 input[type=submit] {
   background-color: #303030;
   color: white;
@@ -80,7 +76,6 @@ margin: 4px 2px;
 input[type=submit]:hover {
   background-color: #282828;
 }
-
 input[type=reset] {
   background-color: #4d4d4d;
   color: white;
@@ -94,8 +89,6 @@ margin: 4px 2px;
 input[type=reset]:hover {
   background-color: #282828;
 }
-
-
 .container {
   max-width: 1000px;
   margin: auto;
@@ -104,27 +97,21 @@ input[type=reset]:hover {
   padding-left: 25px;
   padding-right: 25px;
 }
-
-
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
-
 .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
 }
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 @media only screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit], input[type=reset] {
     width: 100%;
@@ -176,8 +163,6 @@ float: left;
   background-size: 100% 100%;
   font-weight: bold;
 }
-
-
 a:link {
   color: black;
   background-color: transparent;
@@ -203,29 +188,27 @@ a:visited {
 </head>
 
 /*navbar*/
-    <body>
-        <body style="height:1500px">
+<body>
+   <body style="height:1500px">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
     <div class="navbar-header">
 
-<!-- Näytön kokoa muuttaessa, valikko muuttu napiksi -->
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-<span class="icon-bar"></span>
+  <!-- Näytön kokoa muuttaessa, valikko muuttu napiksi -->
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
-      </button>
-
-
+  </button> 
       <a class="navbar-brand" href="#">Ninja</a>
     </div>
-<div class="collapse navbar-collapse" id="myNavbar">
+  <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-right">
       <li class="active"><a href="#">Etusivu</a></li>
       <li><a href="#kuka">Kuka Ninja on</a></li>
 
-<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#uutiset">Uutiset <span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#uutiset">Uutiset <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#mukana">Luennolla mukana</a></li>
           <li><a href="#syksy">Syksy on tullut</a></li>
@@ -233,189 +216,173 @@ a:visited {
       </li>
       <li><a href="#yhteys">Yhteystiedot</a></li>
     </ul>
-  </div>
+ </div>
 </nav>   
-        </body>
-</body>
+   </body>
+ </body>
 
+    
 <div class="aloitussivu">
   <div class="bg1 text-center">
      <img src="https://user-images.githubusercontent.com/82649942/152680441-4895f6f9-4a5d-4d9f-b990-4b63f70ee263.png" width="400">
   </div>
 
-<div class="container-fluid text-center">
+  <div class="container-fluid text-center">
       <br><br><h1>Tervetuloa Ninja kissan omille sivuille. Tällä sivustolla voit seurata Ninjan kuulumisia ja ottaa 
-yhteyttä, jos haluat jotain tietää ninjasta.</h1><br><br>
-</div>
+                  yhteyttä, jos haluat jotain tietää ninjasta.</h1><br><br>
+  </div>
 </div>
 
+                
 <div id="kuka" class="alasivu1">
-<div class="content">
-<h2>Kuka Ninja on</h2><br><br><br>
-  <div class="row">
-    <div class="col-sm-6 col-sm-push-6">
-      <br>
-    <img src="https://user-images.githubusercontent.com/82649942/152684940-89596807-3c62-496c-a748-530c32bf3a83.jpeg" class="responsive">
-    </div>
-    
-    
-    <div class="col-sm-6 col-sm-pull-6">
-    
-    <p>Ninja on 6-vuotias maatiaiskissa, jolta ei vauhtia puutu. Hän rakastaa rapsutuksia, mutta vain 
-        oikeista kohdista. Pienet hiirilelut ovat lemppareita. Ruuan suhteen Ninja osaa olla nirso. Jos 
-        lempiruokaa ei saa, niin silloin ei syödä ja huudetaan nälkää.</p>
+ <div class="content">
+   <h2>Kuka Ninja on</h2><br><br><br>
+    <div class="row">
+        <div class="col-sm-6 col-sm-push-6">
+          <br>
+          <img src="https://user-images.githubusercontent.com/82649942/152684940-89596807-3c62-496c-a748-530c32bf3a83.jpeg" class="responsive">
+        </div>
+        <div class="col-sm-6 col-sm-pull-6">
+           <p>Ninja on 6-vuotias maatiaiskissa, jolta ei vauhtia puutu. Hän rakastaa rapsutuksia, mutta vain 
+               oikeista kohdista. Pienet hiirilelut ovat lemppareita. Ruuan suhteen Ninja osaa olla nirso. Jos 
+               lempiruokaa ei saa, niin silloin ei syödä ja huudetaan nälkää.</p>
 
           <p>Aenean erat diam, tempus quis lobortis sed, condimentum vel tellus. Donec condimentum metus 
-           eu mi dapibus malesuada. Vestibulum in placerat turpis, a varius urna. Nullam rutrum, est vel 
-               vehicula porta, neque lectus scelerisque sapien, eget vestibulum arcu diam a justo. Nullam quis sem 
-          at urna finibus hendrerit a ut mauris. Nam ut augue maximus, vulputate odio ac, convallis ante. 
-          Praesent imperdiet odio vel placerat blandit. Etiam sagittis nisi sit amet nisi feugiat, sagittis 
-          vestibulum risus fermentum. Vestibulum magna enim, mattis eget velit vitae, efficitur sagittis ante. 
-          Vestibulum vulputate enim eget congue mollis. Lorem ipsum dolor sit amet, consectetur adipiscing 
-          elit.</p>
+              eu mi dapibus malesuada. Vestibulum in placerat turpis, a varius urna. Nullam rutrum, est vel 
+              vehicula porta, neque lectus scelerisque sapien, eget vestibulum arcu diam a justo. Nullam quis sem 
+              at urna finibus hendrerit a ut mauris. Nam ut augue maximus, vulputate odio ac, convallis ante. 
+              Praesent imperdiet odio vel placerat blandit. Etiam sagittis nisi sit amet nisi feugiat, sagittis 
+              vestibulum risus fermentum. Vestibulum magna enim, mattis eget velit vitae, efficitur sagittis ante. 
+              Vestibulum vulputate enim eget congue mollis. Lorem ipsum dolor sit amet, consectetur adipiscing 
+              elit.</p>
           <p>Vivamus sodales aliquam sapien, non fermentum nulla porta sit amet. Phasellus et eros fermentum, 
-           luctus tortor maximus, rutrum orci. Nunc nisi arcu, tincidunt non nisi sit amet, rutrum tempus nulla. 
-               Praesent tortor massa, bibendum eu pulvinar nec, vestibulum et ex. Integer massa ligula, molestie 
+              luctus tortor maximus, rutrum orci. Nunc nisi arcu, tincidunt non nisi sit amet, rutrum tempus nulla. 
+              Praesent tortor massa, bibendum eu pulvinar nec, vestibulum et ex. Integer massa ligula, molestie 
               aliquet arcu in, scelerisque laoreet sapien. Maecenas luctus sollicitudin arcu vel fermentum. Nullam 
-               id sem tristique libero facilisis iaculis id quis massa. Fusce vitae efficitur purus.
+              id sem tristique libero facilisis iaculis id quis massa. Fusce vitae efficitur purus.
               Suspendisse ut mollis elit, at fringilla risus. In commodo, metus sed tincidunt euismod, sapien velit
               malesuada nisi, non eleifend augue eros eu eros. Duis nec lorem bibendum, porttitor risus ac, 
-                 rhoncus erat. Donec varius faucibus tempor. Aenean tincidunt orci ante. Class aptent taciti sociosqu 
-           ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ut fringilla sem. Vivamus consectetur nulla ultrices arcu fermentum, a pretium ex sagittis. 
-         In dapibus sem et augue lobortis pellentesque.</p>
+              rhoncus erat. Donec varius faucibus tempor. Aenean tincidunt orci ante. Class aptent taciti sociosqu 
+              ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ut fringilla sem. Vivamus consectetur 
+              nulla ultrices arcu fermentum, a pretium ex sagittis. In dapibus sem et augue lobortis pellentesque.</p>
+       </div>
+         
+     <p>Phasellus ex massa, convallis sed bibendum eu, varius et risus. Vestibulum ante ipsum primis in 
+         faucibus orci luctus et ultrices posuere cubilia curae; Aliquam hendrerit nibh nec dolor ullamcorper 
+         accumsan. Cras commodo est sit amet lacus mollis, eget aliquam tellus ultricies. Nullam auctor nulla 
+         sed metus semper, nec vulputate ligula fringilla. Sed sed auctor metus. Quisque pretium lorem felis, 
+         vitae convallis ex consequat at.</p>
+     <p>Cras ex erat, consequat vel lectus at, volutpat fringilla nulla. Nunc id fermentum nunc, interdum 
+         mollis risus. Praesent eget elit semper, pretium nunc ut, vestibulum purus. Pellentesque gravida 
+         nunc non metus euismod fermentum. Vestibulum ut eros orci. Etiam lacinia nunc in sem varius 
+         sagittis. Duis leo est, viverra eu placerat et, egestas ac ante.
+         Phasellus rhoncus consectetur lacus eget varius. Nulla non nunc lacinia, mattis sem sit amet, fringilla 
+         eros. Fusce at leo ac quam pretium ornare ut eget augue. Sed ac sagittis odio. Curabitur quis libero 
+         in est malesuada elementum. Cras ut consequat lacus. Vivamus sollicitudin orci ac nisi placerat 
+         tempus. Nulla facilisi. Mauris hendrerit magna felis. Nunc libero velit, scelerisque non imperdiet et, 
+         feugiat ut urna. Fusce justo massa, varius ac ex nec, dictum vulputate tellus. Nulla ullamcorper non 
+         arcu ac posuere. Ut neque neque, maximus non sagittis a, iaculis ac lorem. Nullam vitae ex et libero 
+         tempor bibendum at vel mauris. Nam fringilla ullamcorper urna ac imperdiet.</p>
     </div>
-  </div>
-  <div>
-  
-  
-           
-           <p>Phasellus ex massa, convallis sed bibendum eu, varius et risus. Vestibulum ante ipsum primis in 
-faucibus orci luctus et ultrices posuere cubilia curae; Aliquam hendrerit nibh nec dolor ullamcorper 
-accumsan. Cras commodo est sit amet lacus mollis, eget aliquam tellus ultricies. Nullam auctor nulla 
-sed metus semper, nec vulputate ligula fringilla. Sed sed auctor metus. Quisque pretium lorem felis, 
-vitae convallis ex consequat at.</p>
-
-<p>Cras ex erat, consequat vel lectus at, volutpat fringilla nulla. Nunc id fermentum nunc, interdum 
-mollis risus. Praesent eget elit semper, pretium nunc ut, vestibulum purus. Pellentesque gravida 
-nunc non metus euismod fermentum. Vestibulum ut eros orci. Etiam lacinia nunc in sem varius 
-sagittis. Duis leo est, viverra eu placerat et, egestas ac ante.
-Phasellus rhoncus consectetur lacus eget varius. Nulla non nunc lacinia, mattis sem sit amet, fringilla 
-eros. Fusce at leo ac quam pretium ornare ut eget augue. Sed ac sagittis odio. Curabitur quis libero 
-in est malesuada elementum. Cras ut consequat lacus. Vivamus sollicitudin orci ac nisi placerat 
-tempus. Nulla facilisi. Mauris hendrerit magna felis. Nunc libero velit, scelerisque non imperdiet et, 
-feugiat ut urna. Fusce justo massa, varius ac ex nec, dictum vulputate tellus. Nulla ullamcorper non 
-arcu ac posuere. Ut neque neque, maximus non sagittis a, iaculis ac lorem. Nullam vitae ex et libero 
-tempor bibendum at vel mauris. Nam fringilla ullamcorper urna ac imperdiet.</p>
-  
-  </div>
-  
  </div> 
-</div>
 </div>
 
 
 <div id="mukana" class="alasivu2">
-<div class="content">
-<h2>Luennolla mukana</h2>
-<h3>17.11.2021</h3><br><br>
-<br>
-<div class="row">
+ <div class="content">
+  <h2>Luennolla mukana</h2>
+  <h3>17.11.2021</h3><br><br>
+  <br>
+   <div class="row">
     <div class="col-sm-12">
-      <br>
-<img src="https://user-images.githubusercontent.com/82649942/153460897-28746755-031e-4703-a8ac-01e7a4979b71.jpeg" class="responsive">
+     <br>
+     <img src="https://user-images.githubusercontent.com/82649942/153460897-28746755-031e-4703-a8ac-01e7a4979b71.jpeg" class="responsive">
 
-
-<p>Tänään oli taas yksi niistä päivistä, kun ninja oli mukana luennolla. Nykyään kun opiskelu 
-hoidetaan etänä, niin kissakin pääsee luennolle mukaan. Ninjan paikalla olosta kylläkin on 
-enemmän haittaa kuin hyötyä. Keskittyminen suuntautuu kissan silittämiseen, enemmän kuin 
-luennon seuraamiseen.</p>
-<p>Nulla tempus odio nisi, sit amet viverra felis mollis interdum. Vestibulum euismod quam ut 
-imperdiet vehicula. Aenean a euismod leo. In hac habitasse platea dictumst. Suspendisse suscipit 
-gravida justo, vitae accumsan turpis finibus sit amet. Curabitur rhoncus tincidunt velit, quis 
-hendrerit ante dapibus accumsan. Aliquam feugiat vulputate turpis sit amet porta. Pellentesque dui 
-lectus, imperdiet eget ultricies eget, volutpat ac dolor. Quisque sit amet facilisis magna.</p>
-<p>Sed porttitor malesuada quam, a accumsan tellus posuere eu. Duis lectus dolor, convallis non velit 
-at, laoreet auctor nunc. Quisque finibus dapibus eros, at rhoncus nisl ornare in. Aliquam blandit 
-nulla in lectus imperdiet vestibulum. Etiam aliquet quam eget ex tincidunt rhoncus. Sed suscipit id 
-libero nec cursus. Sed sed velit vel sem fringilla placerat vel sed ante. Proin egestas porttitor diam. 
-Morbi tempor sodales convallis.</p>
-<p>Pellentesque nulla mauris, suscipit et justo sit amet, pretium dignissim elit. Nulla quis massa auctor, 
-convallis tortor quis, dictum tellus. Pellentesque et tristique mauris, eget dictum dolor. Nullam et 
-egestas urna, non gravida nunc. Etiam ornare tempus dui eu elementum. Aliquam odio libero, 
-fringilla tincidunt ullamcorper id, lacinia quis libero. Cras a lectus quis purus suscipit malesuada. 
-Nam ut ante tempor, sollicitudin metus ac, cursus enim. Nulla efficitur sodales vehicula. Vestibulum 
-mattis velit id vestibulum gravida. Nullam imperdiet aliquet urna, consequat luctus ante sagittis id. 
-Nulla mollis varius purus, eu posuere massa aliquam ac. Fusce posuere odio sagittis tristique 
-efficitur. Morbi dignissim risus sed quam ultrices scelerisque.</p>
-<p>Nunc quis auctor felis. In tempor scelerisque enim ac lacinia. Aliquam iaculis, justo et tincidunt 
-faucibus, lectus arcu mollis sapien, non feugiat lorem ligula eget enim. Integer sed ante vehicula, 
-tincidunt ligula quis, suscipit ligula. Fusce vel velit vitae nibh condimentum aliquam non eu sem. 
-Quisque mollis et nulla sed vestibulum. Cras tempor eleifend lacus, sit amet luctus nisi vehicula quis. 
-Pellentesque nibh ipsum, tristique in iaculis at, vestibulum vel magna.</p>
-<p>Quisque eget porta libero, vel posuere risus. In hac habitasse platea dictumst. Vivamus aliquam sit 
-amet orci sed efficitur. Morbi non enim nulla. Vestibulum eget ultricies dolor. Sed massa dui, 
-molestie a nunc non, tristique vehicula dolor. Sed congue fringilla turpis, non dapibus nulla congue 
-sit amet. Vestibulum imperdiet, sem id hendrerit commodo, odio leo feugiat justo, sit amet 
-fermentum ligula magna at felis. Proin malesuada leo eu lobortis blandit. Nulla hendrerit euismod 
-luctus. Etiam interdum, purus ut consectetur efficitur, odio eros egestas ex, vitae varius ligula lectus 
-eget metus. Nunc tortor ex, cursus sodales facilisis sit amet, aliquet eget lacus.</p>
-</div>
-</div>
-</div>
+        <p>Tänään oli taas yksi niistä päivistä, kun ninja oli mukana luennolla. Nykyään kun opiskelu 
+            hoidetaan etänä, niin kissakin pääsee luennolle mukaan. Ninjan paikalla olosta kylläkin on 
+            enemmän haittaa kuin hyötyä. Keskittyminen suuntautuu kissan silittämiseen, enemmän kuin 
+            luennon seuraamiseen.</p>
+        <p>Nulla tempus odio nisi, sit amet viverra felis mollis interdum. Vestibulum euismod quam ut 
+            imperdiet vehicula. Aenean a euismod leo. In hac habitasse platea dictumst. Suspendisse suscipit 
+            gravida justo, vitae accumsan turpis finibus sit amet. Curabitur rhoncus tincidunt velit, quis 
+            hendrerit ante dapibus accumsan. Aliquam feugiat vulputate turpis sit amet porta. Pellentesque dui 
+            lectus, imperdiet eget ultricies eget, volutpat ac dolor. Quisque sit amet facilisis magna.</p>
+        <p>Sed porttitor malesuada quam, a accumsan tellus posuere eu. Duis lectus dolor, convallis non velit 
+            at, laoreet auctor nunc. Quisque finibus dapibus eros, at rhoncus nisl ornare in. Aliquam blandit 
+            nulla in lectus imperdiet vestibulum. Etiam aliquet quam eget ex tincidunt rhoncus. Sed suscipit id 
+            libero nec cursus. Sed sed velit vel sem fringilla placerat vel sed ante. Proin egestas porttitor diam. 
+            Morbi tempor sodales convallis.</p>
+        <p>Pellentesque nulla mauris, suscipit et justo sit amet, pretium dignissim elit. Nulla quis massa auctor, 
+            convallis tortor quis, dictum tellus. Pellentesque et tristique mauris, eget dictum dolor. Nullam et 
+            egestas urna, non gravida nunc. Etiam ornare tempus dui eu elementum. Aliquam odio libero, 
+            fringilla tincidunt ullamcorper id, lacinia quis libero. Cras a lectus quis purus suscipit malesuada. 
+            Nam ut ante tempor, sollicitudin metus ac, cursus enim. Nulla efficitur sodales vehicula. Vestibulum 
+            mattis velit id vestibulum gravida. Nullam imperdiet aliquet urna, consequat luctus ante sagittis id. 
+            Nulla mollis varius purus, eu posuere massa aliquam ac. Fusce posuere odio sagittis tristique 
+            efficitur. Morbi dignissim risus sed quam ultrices scelerisque.</p>
+        <p>Nunc quis auctor felis. In tempor scelerisque enim ac lacinia. Aliquam iaculis, justo et tincidunt 
+            faucibus, lectus arcu mollis sapien, non feugiat lorem ligula eget enim. Integer sed ante vehicula, 
+            tincidunt ligula quis, suscipit ligula. Fusce vel velit vitae nibh condimentum aliquam non eu sem. 
+            Quisque mollis et nulla sed vestibulum. Cras tempor eleifend lacus, sit amet luctus nisi vehicula quis. 
+            Pellentesque nibh ipsum, tristique in iaculis at, vestibulum vel magna.</p>
+        <p>Quisque eget porta libero, vel posuere risus. In hac habitasse platea dictumst. Vivamus aliquam sit 
+            amet orci sed efficitur. Morbi non enim nulla. Vestibulum eget ultricies dolor. Sed massa dui, 
+            molestie a nunc non, tristique vehicula dolor. Sed congue fringilla turpis, non dapibus nulla congue 
+            sit amet. Vestibulum imperdiet, sem id hendrerit commodo, odio leo feugiat justo, sit amet 
+            fermentum ligula magna at felis. Proin malesuada leo eu lobortis blandit. Nulla hendrerit euismod 
+            luctus. Etiam interdum, purus ut consectetur efficitur, odio eros egestas ex, vitae varius ligula lectus 
+            eget metus. Nunc tortor ex, cursus sodales facilisis sit amet, aliquet eget lacus.</p>
+    </div>
+  </div>
+ </div>
 </div>
 
 
 <div id="syksy" class="alasivu3">
-<div class="content">
-<h2>Syksy on tullut</h2>
-<h3>18.10.2021</h3><br><br>
-  <div class="row">
+ <div class="content">
+  <h2>Syksy on tullut</h2>
+  <h3>18.10.2021</h3><br><br>
+   <div class="row">
     <div class="col-sm-6">
-      <br>
-<img src="https://user-images.githubusercontent.com/82649942/153463226-9eb5b47d-20ef-4aad-a6c6-aedc3a118562.jpeg" class="responsive">
-<br><br></div>
-
-<div class="col-sm-6">
-<p>Syksyn saapuminen tarkoittaakin ihan uusien värien ihmettelyä. Ninja sisäkissana on todella 
-kiinnostunut ulkomaailmasta ja pienikin muutos on jännittävää.</p>
-
-<p>Quisque dignissim ante aliquam lorem mattis ultricies. Sed accumsan, tellus vel consectetur 
-maximus, elit ex rutrum nulla, sit amet bibendum risus metus at justo. Suspendisse egestas aliquet 
-molestie. Praesent ullamcorper fringilla lacus, a pretium purus laoreet vel. Nulla nec massa est. 
-Aenean fringilla sagittis purus, in tristique ex interdum ac. Maecenas pulvinar ex erat, et congue 
-magna viverra pretium. Donec vel scelerisque libero. Duis suscipit et orci at gravida. Aliquam erat 
-volutpat.Suspendisse at odio sagittis, pulvinar nisi sit amet, laoreet leo. Ut suscipit magna in 
-nisi scelerisque pellentesque nec in magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-<p>Mauris tortor quam, iaculis in elit eget, malesuada dignissim mi. Nullam nunc est, blandit scelerisque 
-congue in, vulputate ac nisi. Curabitur nec tempor felis, non suscipit diam. Fusce nisi lorem, convallis 
-laoreet pellentesque eu, viverra nec velit. Fusce eget imperdiet diam. Cras nec nisl sapien. Donec et 
-nunc odio. Maecenas faucibus bibendum eros in aliquam. Vestibulum vel fermentum lacus.</p>
-
-<p>Pellentesque commodo quam pulvinar posuere semper. Morbi elementum eleifend tincidunt. Donec tempus tincidunt ante, 
-at auctor arcu tincidunt id. Mauris ante risus, bibendum sit amet ligula ut, auctor dictum dolor. Sed tortor massa, 
-facilisis ut lorem egestas, vestibulum molestie orci. Fusce consequat sit amet magna eget auctor. Praesent eu sapien
-vel est mattis accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In 
-laoreet nunc nec felis vestibulum, et condimentum libero finibus. Aliquam placerat mi eget orci rhoncus convallis. 
-Vivamus eget accumsan quam, et eleifend nisi. Maecenas ut urna eget felis molestie maximus.</p>
-</div>
-</div>
-</div>
+     <br>
+     <img src="https://user-images.githubusercontent.com/82649942/153463226-9eb5b47d-20ef-4aad-a6c6-aedc3a118562.jpeg" class="responsive">
+     <br><br></div>
+    </div>
+     <div class="col-sm-6">
+        <p>Syksyn saapuminen tarkoittaakin ihan uusien värien ihmettelyä. Ninja sisäkissana on todella 
+            kiinnostunut ulkomaailmasta ja pienikin muutos on jännittävää.</p>           
+        <p>Quisque dignissim ante aliquam lorem mattis ultricies. Sed accumsan, tellus vel consectetur 
+            maximus, elit ex rutrum nulla, sit amet bibendum risus metus at justo. Suspendisse egestas aliquet 
+            molestie. Praesent ullamcorper fringilla lacus, a pretium purus laoreet vel. Nulla nec massa est. 
+            Aenean fringilla sagittis purus, in tristique ex interdum ac. Maecenas pulvinar ex erat, et congue 
+            magna viverra pretium. Donec vel scelerisque libero. Duis suscipit et orci at gravida. Aliquam erat 
+            volutpat.Suspendisse at odio sagittis, pulvinar nisi sit amet, laoreet leo. Ut suscipit magna in 
+            nisi scelerisque pellentesque nec in magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Mauris tortor quam, iaculis in elit eget, malesuada dignissim mi. Nullam nunc est, blandit scelerisque 
+            congue in, vulputate ac nisi. Curabitur nec tempor felis, non suscipit diam. Fusce nisi lorem, convallis 
+            laoreet pellentesque eu, viverra nec velit. Fusce eget imperdiet diam. Cras nec nisl sapien. Donec et 
+            nunc odio. Maecenas faucibus bibendum eros in aliquam. Vestibulum vel fermentum lacus.</p>
+        <p>Pellentesque commodo quam pulvinar posuere semper. Morbi elementum eleifend tincidunt. Donec tempus tincidunt ante, 
+            at auctor arcu tincidunt id. Mauris ante risus, bibendum sit amet ligula ut, auctor dictum dolor. Sed tortor massa, 
+            facilisis ut lorem egestas, vestibulum molestie orci. Fusce consequat sit amet magna eget auctor. Praesent eu sapien
+            vel est mattis accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In 
+            laoreet nunc nec felis vestibulum, et condimentum libero finibus. Aliquam placerat mi eget orci rhoncus convallis. 
+            Vivamus eget accumsan quam, et eleifend nisi. Maecenas ut urna eget felis molestie maximus.</p>
+     </div>
+   </div>
+ </div>
 </div>
 
 
 <div id="yhteys" class="alasivu4">
-
-<div class="container">
-
-<h2>Yhteystiedot</h2>
-    <br><br>
-     <p style="text-align:center">Voit ottaa yhteyttä täyttämällä alla olevan yhteydenotto lomakkeen tai laittamalla suoraan 
+ <div class="container">
+   <h2>Yhteystiedot</h2>
+   <br><br>
+   <p style="text-align:center">Voit ottaa yhteyttä täyttämällä alla olevan yhteydenotto lomakkeen tai laittamalla suoraan 
                                sähköpostia osoitteeseen <a href="mailto:ninjakissa1@gmail.com">ninjakissa1@gmail.com</a></p>
-    <br><br><br><br>
+   <br><br><br><br>
 
-
- <form action="https://formsubmit.co/ninjakissa1@gmail.com" method="POST">
+   <form action="https://formsubmit.co/ninjakissa1@gmail.com" method="POST">
     <div class="row">
       <div class="col-25">
         <label for="fname">Etunimi</label>
@@ -463,36 +430,26 @@ Vivamus eget accumsan quam, et eleifend nisi. Maecenas ut urna eget felis molest
       </div>
     </div>
 
-<label for="files">Valitse tiedosto:</label>
-<input type="file" id="files" name="files" multiple><br><br>
-
-
-    <div class="row">
-      <br>
-      <input type="reset">
-      <input type="submit" value="Lähetä">
-    </div>
-     
-     
-     
-     
-  </form>
+           <label for="files">Valitse tiedosto:</label>
+           <input type="file" id="files" name="files" multiple><br><br>
+       
+     <div class="row">
+       <br>
+       <input type="reset">
+       <input type="submit" value="Lähetä">
+     </div>   
+   </form>
 </div>
 
+  <div class="up">
+    <a class="up-arrow" href="" data-toggle="tooltip" title="Takaisin ylös">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  </div>
 
-<div class="up">
-<a class="up-arrow" href="" data-toggle="tooltip" title="Takaisin ylös">
-<span class="glyphicon glyphicon-chevron-up"></span>
-</a>
+  <div class="link">
+     <a href="https://www.instagram.com/ninjansivut/"target="_blank"><img src="https://user-images.githubusercontent.com/82649942/152680441-4895f6f9-4a5d-4d9f-b990-4b63f70ee263.png" style="width:80px;height:80px;">Instagram</a>
+  </div>
 </div>
-
-
-<div class="link">
-  <a href="https://www.instagram.com/ninjansivut/"target="_blank"><img src="https://user-images.githubusercontent.com/82649942/152680441-4895f6f9-4a5d-4d9f-b990-4b63f70ee263.png" style="width:80px;height:80px;">Instagram</a>
-</div>
-
-
-</div>
-
 </body>
 </html>
