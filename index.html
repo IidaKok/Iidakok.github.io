@@ -11,7 +11,7 @@ body {
   font-family: Georgia, serif;
 }
 h1 {
-font-size: 40px;
+  font-size: 40px;
   text-align: center;
 }
 /*h2 asetukset*/
@@ -125,7 +125,7 @@ input[type=reset]:hover {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit], input[type=reset] {
     width: 100%;
     margin-top: 0;
@@ -133,6 +133,16 @@ float: left;
   }
    h1 {
     font-size: 30px;
+  }
+}
+@media only screen and (min-width:1600px) {
+  .aloitussivu {
+    width: 100%;
+    height: 900px;
+    padding-bottom:100px;
+  }
+  h1 {
+    font-size: 50px;
   }
 }
 .aloitussivu{
@@ -427,7 +437,7 @@ Vivamus eget accumsan quam, et eleifend nisi. Maecenas ut urna eget felis molest
         <label for="email">Sähköpostiosoite</label>
       </div>
       <div class="col-75">
-        <input type="text" id="email" name="email" placeholder="Sähköpostiosoitteesi..!" required>
+        <input type="text" id="email" name="email" placeholder="Sähköpostiosoitteesi.." required>
         <input type="hidden" name="_next" value="https://iidakok.github.io/kiitos.html">
       </div>
     </div>
@@ -460,7 +470,7 @@ Vivamus eget accumsan quam, et eleifend nisi. Maecenas ut urna eget felis molest
     <div class="row">
       <br>
       <input type="reset">
-      <input type="submit" value="Lähetä"> 
+      <input type="submit" value="Lähetä">
     </div>
      
      
