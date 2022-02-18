@@ -15,20 +15,26 @@ body {
   padding: 50px;
   margin: auto;
 }
-* {
-  box-sizing: border-box;
-}
 .box {
   background-color: floralwhite;
-  width: 400px;
+  width: 100%;
+  height: auto;
   border: 15px solid lavenderblush;
-  padding: 50px;
   margin: auto;
   float: center;
+  text-align: center;
 }
 .responsive {
   width: 100%;
   height: auto;
+}
+.row{
+   padding: 50px;
+}
+@media screen and (max-width: 900px) {
+   h1 {
+    font-size: 20px;
+   }
 }
 </style>
 </head>
@@ -38,7 +44,8 @@ body {
     <div class="col-sm-6 col-sm-push-6">
       <img src="https://user-images.githubusercontent.com/82649942/154692094-767b058c-a844-414c-bd7d-ab1bdc15f2dc.png" class="responsive">
     </div>
-    <div class="col-sm-6 col-sm-pull-6">
+    <div class="col-sm-6 col-sm-pull-6"  style="padding: 50px">
+    <br><br><br>
        <div class="box">
          <h1>Kiitos yhteydenotosta!</h1>
          <p><a href="https://iidakok.github.io/">Palaa takaisin</a></p>
