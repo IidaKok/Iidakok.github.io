@@ -55,9 +55,10 @@ p {
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid dimgrey;
   border-radius: 4px;
   resize: vertical;
+  background-color: seashell;
 }
 label {
   padding: 12px 12px 12px 0;
@@ -70,7 +71,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-margin: 4px 2px;
+  margin: 4px 2px;
   float: right;
 }
 input[type=submit]:hover {
@@ -83,7 +84,7 @@ input[type=reset] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-margin: 4px 2px;
+  margin: 4px 2px;
   float: right;
 }
 input[type=reset]:hover {
@@ -162,6 +163,15 @@ float: left;
   background-attachment: fixed;
   background-size: 100% 100%;
   font-weight: bold;
+}
+.transbox {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top:30px;
+  padding-bottom:30px;
+  background: rgba(255, 255, 255, 0.6);
 }
 a:link {
   color: black;
@@ -376,6 +386,7 @@ a:visited {
 
 <div id="yhteys" class="alasivu4">
  <div class="container">
+<div class="transbox">
    <h2>Yhteystiedot</h2>
    <br><br>
    <p style="text-align:center">Voit ottaa yhteyttä täyttämällä alla olevan lomakkeen tai laittamalla suoraan 
@@ -383,9 +394,10 @@ a:visited {
    <br><br><br><br>
 
    <form action="https://formsubmit.co/ninjakissa1@gmail.com" method="POST">
+   <p style="font-weight: normal; color:red">Pakolliset kentät *</p>
     <div class="row">
       <div class="col-25">
-        <label for="fname">Etunimi</label>
+        <label for="fname">Etunimi<span style="color:red"> *</span></label>
       </div>
       <div class="col-75">
         <input type="text" id="fname" name="firstname" placeholder="Etunimesi.." required>
@@ -393,7 +405,7 @@ a:visited {
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="lname">Sukunimi</label>
+        <label for="lname">Sukunimi <span style="color:red"> *</span></label>
       </div>
       <div class="col-75">
         <input type="text" id="lname" name="lastname" placeholder="Sukunimesi.." required>
@@ -401,7 +413,7 @@ a:visited {
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="email">Sähköpostiosoite</label>
+        <label for="email">Sähköpostiosoite <span style="color:red"> *</span></label>
       </div>
       <div class="col-75">
         <input type="text" id="email" name="email" placeholder="Sähköpostiosoitteesi.." required>
@@ -413,7 +425,7 @@ a:visited {
         <label for="aihe">Aihe</label>
       </div>
       <div class="col-75">
-        <select id="aihe" name="aihe" required>
+        <select id="aihe" name="aihe">
           <option value="tyhja"> </option>
           <option value="uutiset">Uutiset</option>
           <option value="ninja">Ninja</option>
@@ -426,7 +438,7 @@ a:visited {
         <label for="teksti">Vapaa sana</label>
       </div>
       <div class="col-75">
-        <textarea id="teksti" name="teksti" placeholder="Kirjoita jotain.." style="height:200px" required></textarea>
+        <textarea id="teksti" name="teksti" placeholder="Kirjoita jotain.." style="height:200px"></textarea>
       </div>
     </div>
 
@@ -439,6 +451,7 @@ a:visited {
        <input type="reset">
      </div>   
    </form>
+ </div>
 </div>
 
   <div class="up">
@@ -446,6 +459,7 @@ a:visited {
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
   </div>
+
 
   <div class="link">
      <a href="https://www.instagram.com/ninjansivut/"target="_blank"><img src="https://user-images.githubusercontent.com/82649942/152680441-4895f6f9-4a5d-4d9f-b990-4b63f70ee263.png" style="width:80px;height:80px;">Instagram</a>
